@@ -20,3 +20,9 @@ steps:
     publishJUnitResults: false
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
+
+- task: SonarCloudPrepare@1
+  inputs:
+    SonarCloud: 'laihoangle'
+    organization: 'lai-hoang-le56436'
+    scannerMode: 'Other'
